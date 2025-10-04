@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main .content, .games-section {
+    flex: 1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+nav {
+    padding: 16px 80px;   
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+nav .my-portfolio a {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #303f9f;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+nav .nav-links {
+    display: flex;
+    gap: 16px;
+}
+
+nav .nav-links a {
+    text-decoration: none;
+    color: #333;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+nav .nav-links a:hover,
+nav .nav-links a.selected {
+    color: #303f9f;
+    background-color: rgba(48, 63, 159, 0.1); 
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px 20px;
+    }
+
+    nav .nav-links {
+        margin-top: 10px;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
+
+
+.main {
+    margin-top: 250px;
+    margin-bottom: 300px;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    height: calc(100vh - 80px);
+    flex-wrap: wrap; 
+    text-align: left;
+}
+
+.main .info h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.main .info p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.main .info button {
+    padding: 12px 36px;
+    background: #303f9f;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.main .info button:hover {
+    background: #1a237e;
+    transform: scale(1.05);
+}
+
+.main img {
+    width: 350px;
+    border-radius: 50%;
+    border: 4px solid #2b2929;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.about-content {
+    background-color: #dbedf2;
+    padding: 80px 15%;
+    display: flex;
+    gap: 30px;
+    margin-bottom: 150px;
+}
+
+.about-container {
+    display: flex;            
+    align-items: center;   
+    gap: 60px;
+    max-width: 1200px;                 
+}
+
+.about-container img {
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.about-container img:hover {
+    transform: scale(1.05);
+}
+
+.about-me h2 {
+    font-size: 2.2rem;
+    color: #303f9f;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.about-me p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+    max-width: 600px;
+}
+
+footer {
+    background: #303f9f;
+    padding: 30px 20px;    
+    text-align: center;
+    color: white;
+    margin-top: auto;
+}
+
+footer .socials {
+    margin-bottom: 15px;   
+}
+
+footer .socials i {
+    font-size: 32px;        
+    margin: 0 12px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+footer .socials i:hover {
+    color: #76c8f8;
+}
+
+footer .socials a {
+    color: inherit;         
+    text-decoration: none;  
+    margin: 0 8px;
+    font-size: 32px;
+    transition: color 0.3s ease;
+}
+
+footer .socials a:hover {
+    color: #76c8f8;          
+}
+
+
+footer p {
+    font-size: 14px;        
+    opacity: 0.9;          
+    margin: 0;             
+}
+
+.contact-footer {
+
+}
+
+
+.separator h4 {
+    font-size: h4;
+    font-weight: 400;
+}
+
+.separator {
+    padding: 20px 148px 0;
+}
+
+.separator h4 {
+    margin-bottom: 30px;
+}
+
+.featured {
+    padding: 40px 290px 50px;
+}
+
+.featured .item,
+.project-list .item {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.featured .item img, 
+.project-list .item img { 
+    width: 350px;
+    height: 200px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.featured .item .details h3,
+.project-list .item .details h3 {
+    font-size: 30px;
+    margin-bottom: 16px;
+}
+
+.project-list .item .details h3 a {
+    color: #333; 
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.project-list .item .details h3 a:hover {
+    color: #303f9f; 
+}
+
+
+.featured .item .details .item-info,
+.project-list .item .details .item-info{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.featured .item .details .item-info .year-badge,
+.project-list .item .details .item-info .year-badge {
+    background-color: #303f9f;
+    padding: 2px 14px;
+    color: #fff;
+    border-radius: 16px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.featured .item .details .item-info h4,
+.project-list .item .details .item-info h4 {
+    background: #f5f5f5;
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.featured .item .details p
+.project-list .item .details p {
+    width: 700px;
+    text-align: justify;
+}
+
+.featured button {
+    padding: 10px 30px;
+    background: #303f9f;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.featured button:hover {
+    background: #1a237e;
+    transform: scale(1.05);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+.page-title {
+    padding: 80px 234px 20px;
+    width: 100%;
+}
+
+.page-title2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 250px 20px;
+}
+
+.content {
+    padding: 30px 148px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body .hobbies-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .hobbies-footer {
+    margin-top: 0;
+}
+
+.games-section,
+.shows-section,
+.anime-section,
+.musicians-section {
+    text-align: center;
+    padding: 40px 20px 100px;
+    background: #ffffff;
+    margin-bottom: 30px;
+}
+
+.games-title,
+.shows-title,
+.anime-title,
+.musicians-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.games-container,
+.shows-container,
+.anime-container,
+.musicians-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    }
+
+.game-card,
+.shows-card,
+.anime-card,
+.musicians-card {
+  background: #f0f0f0;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 350px;
+  transition: transform 0.2s ease;
+}
+
+.game-card:hover,
+.shows-card:hover,
+.anime-card:hover,
+.musicians-card:hover {
+    transform: scale(1.05);
+}
+
+.game-card img,
+.shows-card img,
+.anime-card img,
+.musicians-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.game-card h3,
+.shows-card h3
+.anime-card h3,
+.musicians-card h3 {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #444;
+}
+
+input {
+    background-color: white;
+    border-color: black;
+    width: 70%;
+    margin-left: 12%;
+    font-size: 20px;
+    padding: 16px 16px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+input:focus-within {
+    outline: none;
+    border-color: #5bd183;
+    border-width: 3px;
+}
+
+textarea {
+    background-color: white;
+    border-color: black;
+    width: 70%;
+    margin-left: 12%;
+    font-size: 20px;
+    padding: 16px 16px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+textarea:focus-within {
+    outline: none;
+    border-color: #5bd183;
+    border-width: 3px;
+}
+
+.contact-button button {
+    display: flex;
+    margin: auto;
+    margin-bottom: 170px;
+    padding: 10px 30px;
+    background: #303f9f;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.contact-button button:hover {
+    background: #1a237e;
+    transform: scale(1.05);
+}
